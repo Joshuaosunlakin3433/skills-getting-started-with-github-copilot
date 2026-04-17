@@ -14,3 +14,21 @@ Remember, it's self-paced so feel free to take a break! ☕️
 
 &copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
 
+## Backend Tests
+
+This project uses `pytest` for backend API tests in the separate `tests/` directory.
+
+Run the full suite:
+
+```bash
+pytest -v
+```
+
+Run a single file:
+
+```bash
+pytest tests/test_api_endpoints.py -v
+```
+
+The tests use the AAA pattern and isolate the in-memory activity data between test cases.
+
